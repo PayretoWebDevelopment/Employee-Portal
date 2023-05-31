@@ -1,8 +1,5 @@
 <div class="container">
     <h1 class="card-heading my-5 text-uppercase text-center">EMPLOYEE RECRUITMENT</h1>
-    <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_acquisition/content/employee_referral.php">
-        <h4>Employee Referral Form</h4>
-    </a>
     <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_acquisition/content/open_requisitions.php">
         <h4>List of Open Requisitions</h4>
     </a>
@@ -58,7 +55,7 @@
                         <h4>Initial Submission</h4>
                     </div>
                 </a>
-                <a class="text-center h-100 w-100" href="../../people_provisions/people_acquisition/content/update_id.php">
+                <!-- <a class="text-center h-100 w-100" href="../../people_provisions/people_acquisition/content/update_id.php">
                     <div class="accordion-body card2">
                         <h4>Update of ID Replacement</h4>
                     </div>
@@ -67,7 +64,7 @@
                     <div class="accordion-body card2">
                         <h4>Request for ID Replacement</h4>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>

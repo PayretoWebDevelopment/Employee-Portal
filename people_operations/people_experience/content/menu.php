@@ -69,7 +69,7 @@
 </div>
 <div class="container">
     <h1 class="card-heading my-5 text-uppercase text-center">EMPLOYEE ONBOARDING</h1>
-    <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="https://drive.google.com/file/d/1avicwpoEYEsin4mp3qaPxWC1OKmQYNEK/view?usp=share_link" target="_blank">
+    <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_operations/people_experience/content/list_documents.php">
         <h4>List of Documents</h4>
     </a>
 </div>

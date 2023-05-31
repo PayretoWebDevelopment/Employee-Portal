@@ -15,12 +15,6 @@
     <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_attraction/content/intern_referral.php">
         <h4>Internship Referral Form</h4>  
     </a>
-    <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_attraction/content/intern_renewal.php">
-        <h4>Internship Renewal</h4>
-    </a>
-    <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_attraction/content/intern_allowance.php">
-        <h4>Internship Allowance</h4>
-    </a>
     <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_attraction/content/intern_schedule.php">
         <h4>Internship Schedule</h4>
     </a>

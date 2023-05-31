@@ -125,58 +125,8 @@ $playbook = @$link[7];
                                     </div>
                                 </form>
                         </div>
-                        <!-- External Training Request Card -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">External Training Request</h1>
-                                <form class="acct-form" action="pdev_edit.php" method="post">
-                                    <div class="g-forms my-3">
-                                        <input type="text" id="external" name="external" placeholder="<?php if (!empty($external)) {
-                                                                                                            echo $external;
-                                                                                                        } else {
-                                                                                                            echo 'Link';
-                                                                                                        } ?>">
-                                    </div>
-                                    <div class="submitbtn">
-                                        <input type="hidden" id="frmname" name="frmname" value="Edited Training Request" />
-                                        <input type="submit" value="Update" name="u_external">
-                                    </div>
-                                </form>
-                        </div>
-                        <!-- L&D Playbook -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">L&D Playbook</h1>
-                                <form class="acct-form" action="pdev_edit.php" method="post">
-                                    <div class="g-forms my-3">
-                                        <input type="text" id="ldplaybook" name="ldplaybook" placeholder="<?php if (!empty($external)) {
-                                                                                                            echo $external;
-                                                                                                        } else {
-                                                                                                            echo 'Link';
-                                                                                                        } ?>">
-                                    </div>
-                                    <div class="submitbtn">
-                                        <input type="hidden" id="frmname" name="frmname" value="Edited Training Request" />
-                                        <input type="submit" value="Update" name="u_ldplaybook">
-                                    </div>
-                                </form>
-                        </div>
                         <h2 class="card-heading my-5 text-center">LMS Support</h2>
-                        <!-- Account Management Card -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">Account Management</h1>
-                                <form class="acct-form" action="pdev_edit.php" method="post">
-                                    <div class="g-forms my-3">
-                                        <input type="text" id="account" name="account" placeholder="<?php if (!empty($account)) {
-                                                                                                        echo $account;
-                                                                                                    } else {
-                                                                                                        echo 'Link';
-                                                                                                    } ?>">
-                                    </div>
-                                    <div class="submitbtn">
-                                        <input type="hidden" id="frmname" name="frmname" value="Edited LMS Support" />
-                                        <input type="submit" value="Update" name="u_account">
-                                    </div>
-                                </form>
-                        </div>
+                    
                         <h2 class="card-heading my-5 text-center">Multimedia and Communications Support</h2>
                         <!-- Multimedia Request Card -->
                         <div class="card my-3 py-3 px-5">

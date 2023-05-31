@@ -87,7 +87,7 @@ $version_num = "1.0.3"
             </div>
             <div class="sublist py-2">
             <h1>OTHERS</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/others/employee_admin/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-users me-2 icon-gray" style="width:15px;"></i>EMPLOYEE ADMIN</a></li>
+                <!-- <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/others/employee_admin/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-users me-2 icon-gray" style="width:15px;"></i>EMPLOYEE ADMIN</a></li> -->
                 <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/others/it_helpdesk/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-computer me-2 icon-gray" style="width:15px;"></i>IT HELPDESK</a></li>
             </div>
         </ul>

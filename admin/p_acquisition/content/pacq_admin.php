@@ -93,22 +93,6 @@ $update_id = @$link[7];
                         <h1 class="card-heading my-5 text-uppercase text-center">ADMIN ACCESS</h1>
                         <!-- Employee Recruitment Card -->
                         <h2 class="card-heading my-5 text-center">Employee Recruitment</h2>
-                        <div class="card my-3 py-3 px-5">
-                            <form class="acct-form" action="pacq_edit.php" method="post">
-                                <h2 class="card-heading mt-2 mb-3">Employee Referral Form</h2>
-                                <div class="g-forms my-3">
-                                    <input type="text" id="e_referral" name="e_referral" placeholder="<?php if (!empty($e_referral)) {
-                                                                                                            echo $e_referral;
-                                                                                                        } else {
-                                                                                                            echo 'Link';
-                                                                                                        } ?>">
-                                </div>
-                                <div class="submitbtn">
-                                    <input type="hidden" id="frmname" name="frmname" value="Edited Employee Referral Form" />
-                                    <input type="submit" value="Update" name="u_e_referral">
-                                </div>
-                            </form>
-                        </div>
                         <!-- List of Open Requisitions Card -->
                         <div class="card my-3 py-3 px-5">
                             <form class="acct-form" action="pacq_edit.php" method="post">
@@ -231,20 +215,12 @@ $update_id = @$link[7];
                             <form class="acct-form" action="pacq_edit.php" method="post">
                                 <div class="info-1">
                                     <div class="g-forms my-3">
-                                        <label class="mb-3" for="requirement">Submission of Pending Pre-Employment Requirements</label><br>
+                                        <label class="mb-3" for="requirement">Submission of Pending Pre-Employment Requirements</label><br>\
                                         <input type="text" id="requirement" name="requirement" placeholder="<?php if (!empty($requirement)) {
                                                                                                                 echo $requirement;
                                                                                                             } else {
                                                                                                                 echo 'Link';
                                                                                                             } ?>">
-                                    </div>
-                                    <div class="g-forms my-3">
-                                        <label class="mb-3" for="concerns">Concerns</label><br>
-                                        <input type="text" id="concerns" name="concerns" placeholder="<?php if (!empty($concerns)) {
-                                                                                                            echo $concerns;
-                                                                                                        } else {
-                                                                                                            echo 'Link';
-                                                                                                        } ?>">
                                     </div>
                                 </div>
 

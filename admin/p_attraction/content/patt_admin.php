@@ -91,27 +91,7 @@ $i_sched = @$link[3];
                 <div class="w-100 py-5">
                     <div class="container">
                         <h1 class="card-heading my-5 text-uppercase text-center">ADMIN ACCESS</h1>
-                        
-                        
-                        <!-- Internal Recruitment Application Form Card -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">Internal Recruitment Application Form</h2>
-                            <form class="acct-form" action="patt_edit.php" method="post">
-                                <div class="g-forms my-3">
-                                    <input type="text" id="recruitment" name="recruitment" placeholder="<?php if (!empty($recruitment)) {
-                                                                                                            echo $recruitment;
-                                                                                                        } else {
-                                                                                                            echo 'Link';
-                                                                                                        } ?>">
-                                </div>
 
-                                <div class="submitbtn">
-                                    <input type="hidden" id="frmname" name="frmname" value="Edited Internal Recruitment Form" />
-                                    <input type="submit" value="Update" name="u_recruitment">
-                                </div>
-                            </form>
-                        </div>
-                        
                         <!-- Intern Referral Form Card -->
                         <div class="card my-3 py-3 px-5">
                             <h2 class="card-heading mt-2 mb-3">Intern Referral Form</h1>
@@ -136,10 +116,10 @@ $i_sched = @$link[3];
                                 <form class="acct-form" action="patt_edit.php" method="post">
                                     <div class="g-forms my-3">
                                         <input type="text" id="i_sched" name="i_sched" placeholder="<?php if (!empty($i_sched)) {
-                                                                                                                echo $i_sched;
-                                                                                                            } else {
-                                                                                                                echo 'Link';
-                                                                                                            } ?>">
+                                                                                                        echo $i_sched;
+                                                                                                    } else {
+                                                                                                        echo 'Link';
+                                                                                                    } ?>">
                                     </div>
 
                                     <div class="submitbtn">
@@ -148,43 +128,7 @@ $i_sched = @$link[3];
                                     </div>
                                 </form>
                         </div>
-                        
-                        <!-- Intern Renewal Link -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">Internship Renewal</h1>
-                                <form class="acct-form" action="patt_edit.php" method="post">
-                                    <div class="g-forms my-3">
-                                        <input type="text" id="i_renew" name="i_renew" placeholder="<?php if (!empty($i_renew)) {
-                                                                                                                echo $i_renew;
-                                                                                                            } else {
-                                                                                                                echo 'Link';
-                                                                                                            } ?>">
-                                    </div>
 
-                                    <div class="submitbtn">
-                                        <input type="hidden" id="frmname" name="frmname" value="Edited Intern Renewal Link" />
-                                        <input type="submit" value="Update" name="u_renew">
-                                    </div>
-                                </form>
-                        </div>
-                        <!-- Intern Allowance Link -->
-                        <div class="card my-3 py-3 px-5">
-                            <h2 class="card-heading mt-2 mb-3">Internship Allowance</h1>
-                                <form class="acct-form" action="patt_edit.php" method="post">
-                                    <div class="g-forms my-3">
-                                        <input type="text" id="i_allowance" name="i_allowance" placeholder="<?php if (!empty($i_allowance)) {
-                                                                                                                echo $i_allowance;
-                                                                                                            } else {
-                                                                                                                echo 'Link';
-                                                                                                            } ?>">
-                                    </div>
-
-                                    <div class="submitbtn">
-                                        <input type="hidden" id="frmname" name="frmname" value="Edited Intern Renewal Link" />
-                                        <input type="submit" value="Update" name="u_allowance">
-                                    </div>
-                                </form>
-                        </div>
                         <!-- End of forms -->
                     </div>
                 </div>

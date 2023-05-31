@@ -160,50 +160,7 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         </div>
     </div>
-    <!-- <div id="carouselExampleIndicators" class="carousel slide overflow-scroll" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container-fluid d-flex justify-content-center p-0 m-0">
-                            <div class="container sub-container">
-                                <h1 class="fs-4 welcome-1">Welcome to</h1>
-                                <img src="/Employee-Portal/assets/img/Payreto_logo_white.png" alt="">
-                                <h2 class="fs-2 pt-2 welcome-2">EMPLOYEE PORTAL</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img carousel-1 d-flex justify-content-center p-0 m-0">
-                            <img src="/Employee-Portal/assets/img/carousel-1.JPG" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img carousel-1 d-flex justify-content-center p-0 m-0">
-                            <img src="/Employee-Portal/assets/img/carousel-2.JPG" alt="">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img carousel-1 d-flex justify-content-center p-0 m-0">
-                            <img src="/Employee-Portal/assets/img/carousel-3.JPG" alt="">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </div> -->
+  
     <!-- /#page-content-wrapper -->
     </div>
 
@@ -213,14 +170,6 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
         include 'anModal.php';
         ?>
     </div>
-    <!-- To be Deleted -->
-    <!-- <script>
-    function test_modal(data){
-        const data2 = document.querySelector('#announce-2');
-        data2.addEventListener('shown.bs.modal', function () {
-        myInput.focus();
-});
-    } -->
     </script>
     <script>
         var el = document.getElementById("wrapper");

@@ -25,7 +25,7 @@ $img = $_SESSION['img'];
 </head>
 <title>Payreto Employee Portal | People Acquisition</title>
 <?php
-$sql = "SELECT link, id FROM p_management WHERE id = 'requirement'";
+$sql = "SELECT link, id FROM p_acquisition WHERE id = 'requirement'";
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_assoc($result)) {

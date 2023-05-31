@@ -1,8 +1,8 @@
 <!-- Announcement Modal -->
 <section id="announcement">
     <?php 
-$announce = get_announcement();
-foreach($announce as $rows => $value1): ?>
+@$announce = get_announcement();
+foreach(@$announce as $rows => $value1): ?>
 
     <!-- Modal -->
     <div class="modal fade" id="announce-<?php echo $value1['hp_id']; ?>" data-bs-backdrop="static"
@@ -14,7 +14,7 @@ foreach($announce as $rows => $value1): ?>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <textarea class="fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $announce[$i]['hp_desc']; ?></textarea>
+                <textarea class="fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $value1['hp_desc']; ?></textarea>
                     <?php
         if(!empty($value1['hp_pic'])): ?>
                     <div>

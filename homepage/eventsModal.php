@@ -11,7 +11,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><?php echo html_entity_decode($value['e_content']); ?></p>
+                <textarea class="card-text"><?php echo html_entity_decode($value['e_content']); ?></textarea>
             </div>
 
         </div>
@@ -36,10 +36,10 @@
             </div>
             <?php foreach($row as $rows => $value): ?>
                 <div class="modal-body">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 500vh;">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo html_entity_decode($value['e_name']); ?></h5>
-                            <p class="card-text"><?php echo html_entity_decode($value['e_content']);?></p>
+                            <textarea class="card-text"><?php echo html_entity_decode($value['e_content']);?>
                             <button data-bs-toggle="modal" data-bs-target="#EventsModal-<?php echo $value['e_id']; ?>" data-bs-dismiss="modal">Read More</button>
                         </div>
                     </div>

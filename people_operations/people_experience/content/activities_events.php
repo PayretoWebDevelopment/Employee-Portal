@@ -72,7 +72,7 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                                                                                                     echo "url('$img')";
                                                                                                                 } else {
                                                                                                                     echo "url('https://source.unsplash.com/600x900/?tech,street')";
-                                                                                                                } ?>; background-size:contain; background-repeat:repeat;">
+                                                                                                                } ?>; background-size:cover; background-repeat:no-repeat;">
                                                     <div class="card-img-overlay d-flex flex-column">
                                                         <div class="card-body">
                                                             <h3 class="card-meta mb-2"><?php echo html_entity_decode($value["e_team"]) ?></h3>

@@ -71,7 +71,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <div class="justify-content d-flex justify-content-center">
                             <a class="card-link mb-3 btn btn-primary" style="background-color:#031166;" href="<?php echo $link ?>" target="_blank" value="">DIRECT LINK HERE</a>
                         </div>
-                        <div class="container d-flex justify-content-center">
+                        <div class="container d-flex justify-content-center" width="1200px">
                             <embed class="w-100" src="<?php echo $link; ?>" type="application/pdf" height="900vh">
                         </div>
                     <?php endif; ?>

@@ -43,7 +43,7 @@ $mail->Port = '587';
 
 //sender info
 $mail->setFrom('payretoemailnotification@gmail.com','Employee Portal');
-$mail->addAddress('dtinternjvivas.payreto@gmail.com'); //change to email of key person (also for testing)
+$mail->addAddress('it.support@payreto.com'); //change to email of key person (also for testing)
 
 //content
 $mail->Subject = $subject;

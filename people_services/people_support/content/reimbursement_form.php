@@ -21,11 +21,13 @@ $img = $_SESSION['img'];
 <head>
     <!-- Local CSS -->
     <link rel="stylesheet" href="/Employee-Portal/assets/css/dashboard_styles.css">
-    <link rel="stylesheet" href="/Employee-Portal/people_provisions/people_attraction/assets/css/p_attraction_styles.css">
+    <link rel="stylesheet" href="/Employee-Portal/people_services/people_support/assets/css/p_support_styles.css">
+    <link rel="stylesheet" href="/Employee-Portal/people_services/people_support/assets/css/reimbursement_styles.css">
 </head>
-<title>Payreto Employee Portal | People Attraction</title>
+<title>Payreto Employee Portal | People Support</title>
+
 <?php
-$sql = "SELECT link, id FROM p_management WHERE id = 'i_referral'";
+$sql = "SELECT link, id FROM p_support WHERE id = 'reimbursement'";
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_assoc($result)) {
@@ -43,16 +45,16 @@ while ($row = mysqli_fetch_assoc($result)) {
             <nav class="heading-payreto navbar navbar-expand-lg navbar-light py-3 px-4">
                 <div class="d-flex align-items-center header-text">
                     <i class="fas fa-align-left tertiary-text fs-4 me-3" id="menu-toggle"></i>
-                    <a class="back-icon me-3" href="/Employee-Portal/people_provisions/people_attraction/index.php"><i class="back-icon fa-solid fa-angle-left"></i></a>
-                    <h4 class="m-0">INTERNSHIP PROGRAM</h4>
+                    <a class="back-icon me-3" href="/Employee-Portal/people_services/people_support/index.php"><i class="back-icon fa-solid fa-angle-left"></i></a>
+                    <h4 class="m-0">EMPLOYEE SUPPORT</h4>
                 </div>
                 <?php
                 include "../../../includes/header.php";
                 ?>
             </nav>
             <div class="w-100 py-5">
-                <div class="container">
-                    <h1 class="card-heading my-5 text-uppercase text-center">INTERNSHIP RENEWAL</h1>
+                <div class="container-fluid w-100 py-5 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="card-heading my-5 text-uppercase text-center">EXPENSE REIMBURSEMENT FORM</h1>
                     <?php if (empty($link)) : ?>
                         <div class="container d-flex justify-content-center">
                             <img src="/Employee-Portal/assets/img/under_construction.gif">
@@ -61,9 +63,6 @@ while ($row = mysqli_fetch_assoc($result)) {
                             <p style="color: red;" class="card-heading">Under Construction... Come back soon! </p>
                         </div>
                     <?php else : ?>
-                        <div class="justify-content d-flex justify-content-center">
-                            <a class="card-link mb-3 btn btn-primary" style="background-color:#031166;" href="<?php echo $link ?>" target="_blank" value="">DIRECT LINK HERE</a>
-                        </div>
                         <div class="container d-flex justify-content-center">
                             <embed class="w-100" src="<?php echo $link; ?>" type="application/pdf" height="900vh">
                         </div>
