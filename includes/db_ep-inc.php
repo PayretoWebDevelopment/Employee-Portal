@@ -2,7 +2,7 @@
 //connection of the system to the DB
 $servername = "127.0.0.1";
 $dbuname = "root";
-$dbpassword = "@payreto2022";
+$dbpassword = "";
 $dbname = "employeeportaldb";
 
 $conn = mysqli_connect($servername, $dbuname, $dbpassword, $dbname);
