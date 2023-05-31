@@ -67,81 +67,53 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                         </div>
                         <div class="d-flex flex-row align-items-center justify-content-between">
                             <h2 class="fs-2 card-heading my-3">Upcoming Events</h2>
-                            <!-- <a href="#EventSeeAll" data-bs-toggle="modal" data-bs-dimiss="modal" class="m-0 p-0 see-all">See all ></a> -->
                             <a href="../people_operations/people_experience/content/activities_events.php" class="m-0 p-0 see-all">See all ></a>
                         </div>
-                        <?php foreach(array_slice($row, 0, 2) as $rows => $value): ?>
+                        <?php foreach (array_slice($row, 0, 2) as $rows => $value) : ?>
                             <div>
-                        <a class="card bg-red rounded-1 my-3 py-4 px-4 text-start text-white d-flex flex-row justify-content-between" href="#EventsModal-<?php echo $value['e_id']; ?>" data-bs-toggle="modal" data-bs-dimiss="modal">
-                            <h4 class="m-0"><?php echo html_entity_decode($value['e_name']); ?></h4>
-                            <h5 class="fs-6 date m-0"><?php echo html_entity_decode($value['e_date']) ?></h5>
-                            
-                        </a>
-                        </div>
-                        <?php endforeach; ?>    
-                        <!-- <a class="card bg-red rounded-1 my-3 py-4 px-4 text-start text-white d-flex flex-row justify-content-between" href="#">
-                            <h4 class="m-0">Event B</h4>
-                            <h5 class="fs-6 date m-0">December 16, 2022</h5>
-                        </a>
-                        <a class="card bg-red rounded-1 my-3 py-4 px-4 text-start text-white d-flex flex-row justify-content-between" href="#">
-                            <h4 class="m-0">Event C</h4>
-                            <h5 class="fs-6 date m-0">December 16, 2022</h5>
-                        </a>
-                        <a class="card bg-red rounded-1 my-3 py-4 px-4 text-start text-white d-flex flex-row justify-content-between" href="#">
-                            <h4 class="m-0">Event D</h4>
-                            <h5 class="fs-6 date m-0">December 16, 2022</h5>
-                        </a> -->
+                                <a class="card bg-red rounded-1 my-3 py-4 px-4 text-start text-white d-flex flex-row justify-content-between" href="#EventsModal-<?php echo $value['e_id']; ?>" data-bs-toggle="modal" data-bs-dimiss="modal">
+                                    <h4 class="m-0"><?php echo html_entity_decode($value['e_name']); ?></h4>
+                                    <h5 class="fs-6 date m-0"><?php echo html_entity_decode($value['e_date']) ?></h5>
+
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
                         <div class="d-flex flex-row align-items-center justify-content-between">
                             <h2 class="fs-2 card-heading my-3">Announcements</h2>
                             <a href="announcement.php" class="m-0 p-0 see-all">See all ></a>
                         </div>
                         <div class="row">
-                            <?php 
-                            $announce = get_announcement();
-                            for($i = 0; $i < 4; $i++): 
-                                $date = date_create($announce[$i]['announce_date']);
-                                if($announce[$i]['hp_desc'] == "") {
+                            <?php
+                            @$announce = get_announcement();
+                            for ($i = 0; $i < 4; $i++) :
+                                if (@$announce[$i]['hp_desc'] == "") {
                                     continue;
                                 } else {
+                                    $date = date_create($announce[$i]['announce_date']);
                             ?>
-                                <div class="col-12 col-md-6 gap-1">
-                                    <div class="card-3 p-3">
-                                        <h3 class="fs-2 card-heading my-2"><?php echo $announce[$i]['hp_title']; ?></h3>
-                                        <p class="fs-6">Date Posted: <?php echo date_format($date, "m/d/Y"); ?> </p>
-                                        <textarea class="fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $announce[$i]['hp_desc']; ?></textarea>
-                                        <button class="btn btn-blue w-25" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $announce[$i]['hp_id'] ?>">Read More</button>
+                                    <div class="col-12 col-md-6">
+                                        <div class="card-3 rounded-1 p-3 h-100 mt-3">
+                                            <h3 class="fs-2 card-heading my-2"><?php echo $announce[$i]['hp_title']; ?></h3>
+                                            <p class="fs-6">Date Posted: <?php echo date_format($date, "m/d/Y"); ?> </p>
+                                            <textarea class="fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $announce[$i]['hp_desc']; ?></textarea>
+                                            <button class="btn btn-blue w-25" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $announce[$i]['hp_id'] ?>">Read More</button>
+                                        </div>
+
                                     </div>
-                                    <!-- <div class="card-3 p-3">
-                                        <h3 class="fs-2 card-heading my-2">Lorem Ipsum</h3>
-                                        <p class="fs-6 text-justify mb-5 fw-normal my-3">Lorem ipsum dolor sit amet consectetur. Vel urna netus sed laoreet pellentesque donec viverra amet. Aliquam vitae cursus ut nulla enim id vitae blandit egestas.</p>
-                                        <button class="btn btn-blue w-25">Read More</button>
-                                    </div> -->
-                                </div>
-                            <?php } endfor; ?>
-                            <!-- <div class="col-12 col-md-6">
-                                <div class="card-3 p-3">
-                                    <h3 class="fs-2 card-heading my-2">Lorem Ipsum</h3>
-                                    <p class="fs-6 text-justify mb-5 fw-normal my-3">Lorem ipsum dolor sit amet consectetur. Vel urna netus sed laoreet pellentesque donec viverra amet. Aliquam vitae cursus ut nulla enim id vitae blandit egestas.</p>
-                                    <button class="btn btn-blue w-25">Read More</button>
-                                </div>
-                                <div class="card-3 p-3">
-                                    <h3 class="fs-2 card-heading my-2">Lorem Ipsum</h3>
-                                    <p class="fs-6 text-justify mb-5 fw-normal my-3">Lorem ipsum dolor sit amet consectetur. Vel urna netus sed laoreet pellentesque donec viverra amet. Aliquam vitae cursus ut nulla enim id vitae blandit egestas.</p>
-                                    <button class="btn btn-blue w-25">Read More</button>
-                                </div>
-                            </div> -->
+                            <?php }
+                            endfor; ?>
+
                         </div>
-                        <h2 class="fs-2 card-heading my-4">Welcome to Payreto</h2>
+                        <h2 class="fs-2 card-heading my-5">Welcome to Payreto</h2>
                         <div class="d-flex flex-row align-items-center justify-content-center">
                             <div class="card-2 rounded-1 my-3 py-4 px-4 d-flex flex-row justify-content-center w-100 gap-5">
-                                <!-- <img src="../assets/img/Welcome-1.png" class="my-2 w-50" style="object-fit: cover;"> -->
                                 <?php
                                 $welcome = get_wc();
-                                for($i = 0; $i < count($welcome); $i++):
+                                for ($i = 0; $i < count($welcome); $i++) :
                                 ?>
-                                <div class="card">
-                                <img src="<?php echo $welcome[$i]; ?>" class="my-2 w-100 align-items-center justify-content-center" style="object-fit: cover;">
-                                </div>
+                                    <div class="card">
+                                        <img src="<?php echo $welcome[$i]; ?>" class="my-2 w-100 align-items-center justify-content-center" style="object-fit: cover;">
+                                    </div>
                                 <?php endfor; ?>
                             </div>
                         </div>
@@ -172,25 +144,23 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                         <h2 class="fs-2 card-heading my-2">Birthdays</h2>
                         <div class="d-flex flex-row align-items-center justify-content-center">
                             <div class="card-2 bg-teal rounded-1 my-3 py-4 px-4 d-flex flex-column justify-content-center w-100" style="line-height: 20px;">
-                                <!-- <img src="../assets/img/HBD-1.png" class="my-2" style="object-fit: cover;">
-                                <img src="../assets/img/HBD-2.png" class="my-2" style="object-fit: cover;"> -->
-                                    
                                 <?php
-                                    $listofbday = get_bday();
-                                    //echo count($listofbday);
-                                    for($i = 0; $i < count($listofbday); $i++):
-                                
+                                $listofbday = get_bday();
+                                //echo count($listofbday);
+                                for ($i = 0; $i < count($listofbday); $i++) :
+
                                 ?>
-                                <img src="<?php echo $listofbday[$i]; ?>" class="my-2" style="object-fit: cover;">
+                                    <img src="<?php echo $listofbday[$i]; ?>" class="my-2" style="object-fit: cover;">
                                 <?php endfor; ?>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
-        <!-- <div id="carouselExampleIndicators" class="carousel slide overflow-scroll" data-bs-ride="carousel">
+    </div>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide overflow-scroll" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -234,24 +204,24 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </div>
         </div>
     </div> -->
-        <!-- /#page-content-wrapper -->
+    <!-- /#page-content-wrapper -->
     </div>
 
-<div>
-    <?php //include '../assets/modal/activitiesModal.php'; 
+    <div>
+        <?php //include '../assets/modal/activitiesModal.php'; 
         include 'eventsModal.php';
         include 'anModal.php';
-    ?>
-</div>
-<!-- To be Deleted -->
-<!-- <script>
+        ?>
+    </div>
+    <!-- To be Deleted -->
+    <!-- <script>
     function test_modal(data){
         const data2 = document.querySelector('#announce-2');
         data2.addEventListener('shown.bs.modal', function () {
         myInput.focus();
 });
     } -->
-</script>
+    </script>
     <script>
         var el = document.getElementById("wrapper");
         var toggleButton = document.getElementById("menu-toggle");
@@ -312,38 +282,38 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
         });
     </script>
 
-<!-- Homepage Clock -->
-<script>
-    function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
-}
+    <!-- Homepage Clock -->
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
 
-showTime();
-</script>
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        showTime();
+    </script>
 </body>
 
 </html>
