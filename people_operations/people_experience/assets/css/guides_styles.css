@@ -1,0 +1,41 @@
+.note {
+  font-size: clamp(1em, 1.0vw, 3em);
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #ffffffc0;
+  color: #000000;
+}
+
+.container-fp {
+  background: url("https://www.rappler.com/tachyon/2020/09/Sept-10-Image-1.jpg") no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sodexo{
+  width: 15% !important;
+}
+
+.container-sd {
+  background: url("https://www.japantimes.co.jp/wp-content/uploads/2020/06/np_file_15799.jpeg") no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container-gr{
+  background: url("https://assets.grab.com/wp-content/uploads/sites/4/2020/05/14210252/MYGrabPH-11158-min-min.jpg") no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blur-bg {
+  backdrop-filter: blur(3px) brightness(70%);
+  background-size: contain;
+  background-position: center;
+}

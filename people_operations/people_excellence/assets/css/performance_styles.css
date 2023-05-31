@@ -1,0 +1,10 @@
+.download-link{
+  font-weight: 400;
+  color: #031166;
+  transition: 0.3s all ease-in-out;
+}
+
+.download-link:hover{
+  font-weight: 600;
+  color: #031166;
+}

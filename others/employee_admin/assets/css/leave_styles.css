@@ -1,0 +1,9 @@
+.table th{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table td{
+  font-weight: 400;
+}

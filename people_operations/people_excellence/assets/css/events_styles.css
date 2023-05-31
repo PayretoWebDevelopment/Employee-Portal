@@ -1,0 +1,175 @@
+.table th{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table td{
+  font-weight: 400;
+}
+
+/* Button */
+  
+.btn-payreto-darkblue-900 {
+  color: #fff !important;
+  background-color: #031166 !important;
+  border-color: #031166 !important;
+}
+
+.btn-payreto-darkblue-900:hover {
+  color: #fff !important;
+  background-color: #031166 !important;
+  border-color: #031166 !important;
+}
+
+.btn-payreto-darkblue {
+  color: #031166 !important;
+}
+
+.btn-payreto-payment {
+  color: #fff !important;
+  background-color: #9ccbfd !important;
+  border-color: #9ccbfd !important;
+}
+
+.btn-payreto-payment:hover {
+  color: #fff !important;
+  background-color: red !important;
+  border-color: red !important;
+}
+
+.btn-payreto-onboarding {
+  color: #ffcab8 !important;
+}
+
+.btn-payreto-finance {
+  color: #ffc7d2 !important;
+}
+
+.btn-payreto-contact {
+  color: #59e1da !important;
+}
+
+.btn-payreto-format {
+  width: 8rem !important;
+}
+
+.wrapper {
+  margin: 10vh;
+}
+.card {
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 #00000033;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+ }
+}
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+ }
+}
+.card.card-has-bg {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card.card-has-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.card.card-has-bg:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #FFFFFF;
+}
+.card.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, #01053880 0%, #010538 100%);
+  color: #FFFFFF;
+}
+.card .card-footer {
+  background: none;
+  border-top: none;
+  color: #000000;
+}
+
+.card .card-body {
+  color: #000000;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover{
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #FFFFFF;
+}
+
+.card:hover .card-footer {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #FFFFFF;
+}
+
+.card .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d21;
+  background: linear-gradient(0deg, #FEE6AA61 0%, #FEE6AA 100%);
+}
+
+
+.card h3{
+  font-size: 1.2vh;
+}
+
+.card h4{
+  font-size: 2.6vh;
+  text-transform: uppercase;
+}
+
+.card h5{
+  font-size: 1.4vh;
+}
+
+/* MODAL */
+
+.fade{
+  transition: 0.2s ease;
+}
+
+.modal{ 
+  transition: 0.4s ease;
+}
+
+
+.btn{
+  color: #000000;
+}
+.btn:hover{
+  color: #FFFFFF;
+}

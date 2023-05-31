@@ -1,0 +1,171 @@
+.content{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.settings-header{
+    font-weight: 700;
+    font-size: 2.8vh;
+}
+
+.info-1 label, .info-2 label, .info-3 label, .info-4 label{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.7vh;
+}
+
+.info-1 h2, .info-2 h2, .info-3 h2, .info-4 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.1vh;
+    color: #939393;
+    border: none;
+}
+
+.info-5 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.3vh;
+    color: #939393;
+    border: none;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], .form-select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 90%;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    display: inline-block;
+    border: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    outline: none;
+}
+
+.submitbtn input[type="submit"], .submitbtn button{
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid #2C316F;
+    color: #2C316F;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.submitbtn input[type="submit"]:hover, .submitbtn button:hover {
+    cursor: pointer;
+    color: white;
+    background-color:  #2C316F;
+    transition: all 0.3s;
+}
+
+.uploadbtn button{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid #2C316F;
+    color: #2C316F;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.uploadbtn button:hover {
+    cursor: pointer;
+    color: white;
+    background-color:  #2C316F;
+    transition: all 0.3s;
+}
+
+.btn-primary{
+    color: #2C316F;
+    background-color:  #FFFFFF;
+    border: 1px solid 2C316F;
+    font-weight: 600;
+    font-size: 1.4vh;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #2C316F;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+table thead{
+    background-color: #2C316F;
+    color: #FFFFFF;
+    font-size: 1.5vh;
+    text-transform: uppercase;
+}
+
+table td{
+    font-size: 1.5vh;
+}
+
+.updatebtn input[type="submit"], .submitbtn button{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid #2C316F;
+    color: #2C316F;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    font-size: 1.6vh;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.updatebtn input[type="submit"]:hover, .submitbtn button:hover {
+    cursor: pointer;
+    color: white;
+    background-color:  #2C316F;
+    transition: all 0.3s;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge:empty {
+    display: none;
+}
+
+.btn .badge {
+    position: relative;
+    top: -1px;
+}
+
+.displayBadge {
+    margin-top: 1%;
+    display: none;
+    text-align: center;
+}

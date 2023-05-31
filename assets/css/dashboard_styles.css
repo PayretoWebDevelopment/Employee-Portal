@@ -1,0 +1,318 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  transition: opacity 0.4s;
+} 
+
+:root {
+  --main-bg-color: #009d63;
+  --main-text-color: #FFFFFF;
+  --second-text-color: #FFFFFF;
+  --second-bg-color: #c1efde;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.tertiary-text {
+  color: var(--main-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+.heading-payreto {
+  padding: 3rem 0 3rem 0;
+  background-color: #031166;
+}
+
+.header-text h4 {
+  font-size: clamp(1em, 1.4vw, 3em);
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.sidebar-payreto {
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: -40px -13px 0px -32px rgba(224,224,227,0.75) inset;
+  -webkit-box-shadow: -40px -13px 0px -32px rgba(224,224,227,0.75) inset;
+  -moz-box-shadow: -40px -13px 0px -32px rgba(224,224,227,0.75) inset;
+}
+
+/* Button */
+
+.btn-admin{
+  background-color: #031166;
+  font-weight: 600;
+}
+
+.btn-admin:hover, .btn-admin:active{
+  background-color: #031166;
+}
+
+.portal-2 li, .portal-2 a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vh;
+    font-weight: 600;
+}
+  
+.btn-payreto-darkblue-900 {
+  color: #fff !important;
+  background-color: #031166 !important;
+  border-color: #031166 !important;
+}
+
+.btn-payreto-darkblue-900:hover {
+  color: #fff !important;
+  background-color: #031166 !important;
+  border-color: #031166 !important;
+}
+
+.btn-payreto-darkblue {
+  color: #031166 !important;
+}
+
+.btn-payreto-payment {
+  color: #fff !important;
+  background-color: #9ccbfd !important;
+  border-color: #9ccbfd !important;
+}
+
+.btn-payreto-payment:hover {
+  color: #fff !important;
+  background-color: red !important;
+  border-color: red !important;
+}
+
+.btn-payreto-onboarding {
+  color: #ffcab8 !important;
+}
+
+.btn-payreto-finance {
+  color: #ffc7d2 !important;
+}
+
+.btn-payreto-contact {
+  color: #59e1da !important;
+}
+
+.btn-payreto-format {
+  width: 8rem !important;
+}
+
+
+
+
+/* #ECEDF1 */
+
+.navlist {
+  padding: 1.5rem;
+}
+
+.navlist ul {
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navlist li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.navlist h1 {
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.10em;
+  color: #939393;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2px;
+}
+
+.navlist a,
+.dropdown-item {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  border: none;
+  position: relative;
+}
+
+a.middle {
+  position: relative;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  top: 1rem;
+  left: 0;
+  background-color: #000000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-gray {
+  color: #939393;
+}
+
+.profile-settings {
+  text-decoration: none;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-pos {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  position: sticky;
+  top: 0;
+}
+
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.list-group-item {
+  padding: 0;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.border-white {
+  border: none;
+}
+
+.border-white:focus {
+  border: none;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+.log-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.log-out input[type="submit"] {
+  font-family: 'Montserrat', 'sans-serif';
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: #FF7070;
+  border: none;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+
+.log-out input[type="submit"]:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #939393;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.container-fp{
+  background-color: #d60665;
+}
+.version-control{
+  font-size: 10px;
+  font-family: 'Montserrat', 'sans-serif';
+  color: #939393;
+}
+
+

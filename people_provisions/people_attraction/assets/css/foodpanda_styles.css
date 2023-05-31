@@ -1,0 +1,8 @@
+
+.note{
+  font-size: clamp(1em, 1.0vw, 3em);
+  font-weight: 600;
+  border: solid 1px white;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
