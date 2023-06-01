@@ -110,9 +110,9 @@ $img = $_SESSION['img'];
                                             <label for="issue_urgency" class="col-form-label text-payreto-darkblue-900 fw-bold">Urgency of the Issue:</label>
                                             <select class="form-select" name="issue_urgency" required>
                                                 <option selected>-- Select Urgency --</option>
-                                                <option value="0">Low</option>
-                                                <option value="1">Medium</option>
-                                                <option value="2">High</option>
+                                                <option value="Low">Low</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="High">High</option>
                                             </select>
                                         </div>
                                         <div>

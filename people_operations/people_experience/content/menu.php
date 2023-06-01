@@ -46,7 +46,7 @@
                 </a>
                 <a class="text-center h-100 w-100" href="/Employee-Portal/people_operations/people_experience/content/employee_nomination.php">
                     <div class="accordion-body card2">
-                        <h4>Employee Nomination Form</h4>
+                        <h4>Rewards & Recognition Award Submission Form</h4>
                     </div>
                 </a>
                 <a class="text-center h-100 w-100" href="/Employee-Portal/people_operations/people_experience/content/payreto_points.php">

@@ -255,12 +255,14 @@ if (isset($_SESSION['status_admin_sett'])) {
 
                                                                 switch ($employee['admin']){
                                                                     case 0: echo "Employee"; break;
-                                                                    case 1: echo "P'Man Admin"; break;
-                                                                    case 2: echo "P'Dev Admin"; break;
-                                                                    case 3: echo "P'Acq Admin"; break;
-                                                                    case 4: echo "P'Sup Admin"; break;
-                                                                    case 5: echo "E'Adm Admin"; break;
+                                                                    case 1: echo "People Attraction Admin"; break;
+                                                                    case 2: echo "People Development Admin"; break;
+                                                                    case 3: echo "People Acquisition Admin"; break;
+                                                                    case 4: echo "People Support Admin"; break;
+                                                                    case 5: echo "People Excellence Admin"; break;
                                                                     case 6: echo "IT Helpdesk Admin"; break;
+                                                                    case 7: echo "Super Admin"; break;
+                                                                    case 8: echo "People Experience Admin"; break;
                                                                 }
 
 

@@ -19,6 +19,7 @@ if(isset($_POST['submit'])){
     $affected = filter_input(INPUT_POST, "issue_affected", FILTER_SANITIZE_SPECIAL_CHARS);
     $urgency = filter_input(INPUT_POST, "issue_urgency", FILTER_SANITIZE_SPECIAL_CHARS);
     $uname = filter_var($_SESSION['uname'], FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_var($_SESSION['email'], FILTER_SANITIZE_SPECIAL_CHARS);
     $subject = "Ticket request from " . $uname;
 }
 
@@ -44,6 +45,7 @@ $mail->Port = '587';
 //sender info
 $mail->setFrom('payretoemailnotification@gmail.com','Employee Portal');
 $mail->addAddress('it.support@payreto.com'); //change to email of key person (also for testing)
+$mail->addCC($email);
 
 //content
 $mail->Subject = $subject;

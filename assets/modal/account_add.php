@@ -42,13 +42,14 @@
                             <label for="message-text" class="col-form-label text-payreto-darkblue-900 fw-bold">Privilege:</label>
                             <select class="form-select" name="admin">
                                 <option value="0" selected>Employee</option>
-                                <option value="1">P'Man Admin</option>
-                                <option value="2">P'Dev Admin</option>
-                                <option value="3">P'Acq Admin</option>
-                                <option value="4">P'Sup Admin</option>
-                                <option value="5">E'Adm Admin</option>
+                                <option value="1">People Attraction Admin</option>
+                                <option value="2">People Development Admin</option>
+                                <option value="3">People Acquisition Admin</option>
+                                <option value="4">People Support Admin</option>
+                                <option value="5">People Excellence Admin</option>
                                 <option value="6">IT Helpdesk Admin</option>
                                 <option value="7">Super Admin</option>
+                                <option value="8">People Experience Admin</option>
                             </select>
                         </div>
                     </div>

@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
     $admin_oa = @$_SESSION["admin_oa"];
 }
 if (@$admin_oa != 1) {
-    if (@$admin != 4 && !empty(@$admin)) {
+    if (@$admin != 5 && !empty(@$admin)) {
         session_destroy();
         echo "<script> window.location.href = '/Employee-Portal/login/login.php' </script>";
     }

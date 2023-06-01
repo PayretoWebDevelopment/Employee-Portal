@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
     $admin_oa = @$_SESSION["admin_oa"];
 }
 if (@$admin_oa != 1) {
-    if (@$admin != 4 && !empty(@$admin)) {
+    if (@$admin != 8 && !empty(@$admin)) {
         session_destroy();
         echo "<script> window.location.href = '/Employee-Portal/login/login.php' </script>";
     }
@@ -111,7 +111,7 @@ $sodexo_account3 = @$link[19];
                             <form class="acct-form" action="pexp_edit.php" method="post" enctype="multipart/form-data">
                                 <div class="info-1">
                                     <div class="g-forms my-3">
-                                        <label class="mb-3" for="redemption">Redemption Form</label><br>
+                                        <label class="mb-3" for="redemption">Rewards & Recognition Points Redemption Form</label><br>
                                         <input type="text" id="redemption" name="redemption" placeholder="<?php if (!empty($rewards)) {
                                                                                                                 echo $rewards;
                                                                                                             } else {
@@ -119,7 +119,7 @@ $sodexo_account3 = @$link[19];
                                                                                                             } ?>">
                                     </div>
                                     <div class="g-forms my-3">
-                                        <label class="mb-3" for="nomination">Employee Nomination Form</label><br>
+                                        <label class="mb-3" for="nomination">Rewards & Recognition Award Submission Form</label><br>
                                         <input type="text" id="nomination" name="nomination" placeholder="<?php if (!empty($nomination)) {
                                                                                                                 echo $nomination;
                                                                                                             } else {
