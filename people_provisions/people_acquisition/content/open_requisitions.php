@@ -49,7 +49,7 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </nav>
             <div class="w-100 py-5">
                 <div class="container">
-                    <h1 class="card-heading my-5 text-uppercase text-center">LIST OF OPEN REQUISITIONS</h1>
+                    <h1 class="card-heading my-5 text-uppercase text-center">LIST OF OPEN POSITIONS</h1>
                     <?php if (empty($row)) : ?>
                         <div class="container d-flex justify-content-center">
                             <img src="/Employee-Portal/assets/img/under_construction.gif">
@@ -87,6 +87,6 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-</body>
 
+</body>
 </html>

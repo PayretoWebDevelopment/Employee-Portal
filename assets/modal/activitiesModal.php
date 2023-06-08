@@ -14,7 +14,7 @@ foreach ($row as $key => $value) :
                     </div>
                     <div class="modal-body">
                         <!-- border display and clickable none -->
-                        <span id="event_content"></span>
+                        <textarea cols="50" rows="30" id="event_content" disabled><p></p></textarea>
                     </div>
                 </div>
             </div>

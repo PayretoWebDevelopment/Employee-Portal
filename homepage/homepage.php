@@ -95,8 +95,8 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                         <div class="card-3 rounded-1 p-3 h-100 mt-3">
                                             <h3 class="fs-2 card-heading my-2"><?php echo $announce[$i]['hp_title']; ?></h3>
                                             <p class="fs-6">Date Posted: <?php echo date_format($date, "m/d/Y"); ?> </p>
-                                            <textarea class="fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $announce[$i]['hp_desc']; ?></textarea>
-                                            <button class="btn btn-blue w-25" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $announce[$i]['hp_id'] ?>">Read More</button>
+                                            <textarea cols="50" rows="30" class="card-text fs-6 text-justify mb-5 fw-normal my-3" disabled><?php echo $announce[$i]['hp_desc']; ?></textarea>
+                                            <!-- <button class="btn btn-blue w-25" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $announce[$i]['hp_id'] ?>">Read More</button> -->
                                         </div>
 
                                     </div>

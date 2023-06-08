@@ -1,7 +1,7 @@
 <div class="container">
     <h1 class="card-heading my-5 text-uppercase text-center">EMPLOYEE RECRUITMENT</h1>
     <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_acquisition/content/open_requisitions.php">
-        <h4>List of Open Requisitions</h4>
+        <h4>List of Open Positions</h4>
     </a>
     <a class="card rounded-0 my-4 mx-5 py-4 px-5 d-flex justify-content-center align-content-center text-start" href="/Employee-Portal/people_provisions/people_acquisition/content/internal_recruitment.php">
         <h4>Internal Recruitment Application Form</h4>

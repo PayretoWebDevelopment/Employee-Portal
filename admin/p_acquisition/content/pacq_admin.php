@@ -96,7 +96,7 @@ $update_id = @$link[7];
                         <!-- List of Open Requisitions Card -->
                         <div class="card my-3 py-3 px-5">
                             <form class="acct-form" action="pacq_edit.php" method="post">
-                                <h2 class="card-heading mt-2 mb-3">List of Open Requisitions</h2>
+                                <h2 class="card-heading mt-2 mb-3">List of Open Positions</h2>
                                 <!--  -->
                                 <div class="info-1">
                                     <?php

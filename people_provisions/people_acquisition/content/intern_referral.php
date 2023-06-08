@@ -74,5 +74,27 @@ while ($row = mysqli_fetch_assoc($result)) {
     </div>
     <!-- /#page-content-wrapper -->
 </body>
-
+<script>
+    Swal.fire({
+        title: "Redirecting",
+        html: '<b></b> seconds. Click cancel to stay on this page',
+        timer: 5000,
+        timerProgressBar: true,
+        allowOutsideClick: false,
+        showCancelButton: true,
+        cancelButtonText: 'Cancel',
+        showConfirmButton: false,
+        didOpen: () => {
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+                b.textContent = (Swal.getTimerLeft() / 1000)
+                    .toFixed(0)
+            }, 100)
+        },
+    }).then((result) => {
+        if (result.dismiss === Swal.DismissReason.timer) {
+            window.location.href = '<?php echo $link; ?>';
+        }
+    });
+</script>
 </html>
