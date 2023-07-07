@@ -253,4 +253,5 @@ textarea {
   color: #747474; 
   font-style: italic;
   resize: none;
+  line-height: 1.3em;
 }

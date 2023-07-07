@@ -51,11 +51,12 @@ $location = @$_SESSION['location'];
             <div class="w-100 py-5">
                 <div class="d-flex flex-column align-items-center">
                     <?php $announce = get_announcement();
-                    foreach ($announce as $rows => $value1) : ?>
-                        <div class="card-3 p-3 w-75 m-1">
+                    foreach ($announce as $rows => $value1) : 
+                        $date = date_create($announce[$i]['announce_date']);?>
+                        <div class="card-3 p-3 w-50 m-2">
                             <h3 class="fs-2 card-heading my-2"><?php echo $value1['hp_title']; ?></h3>
-                            <p class="fs-6 text-justify mb-5 fw-normal my-3"><?php echo $value1['hp_desc']; ?></p>
-                            <button class="btn btn-blue w-25 align-items-right" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $value1['hp_id']; ?>">Read More</button>
+                            <p class="fs-6">Date Posted: <?php echo date_format($date, "m/d/Y"); ?> </p>
+                            <button class="btn btn-blue mt-5 w-25 align-items-right" data-bs-toggle="modal" data-bs-target="#announce-<?php echo $value1['hp_id']; ?>">Read More</button>
                         </div>
                     <?php endforeach; ?>
                 </div>

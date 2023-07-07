@@ -10,83 +10,25 @@ $version_num = "1.0.3"
         </div>
     </div>
 
-    <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button py-2 d-flex justify-space-between" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    PEOPLE PROVISIONS
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-                    <div id="list-group list-group-flush navlist">
-                        <ul class="portal p-0">
-                            <li class="d-flex flex-row align-items-center mb-4 pt-2 pb-1"><a href="/Employee-Portal/people_management/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE ATTRACTION</a></li>
-                            <li class="d-flex flex-row align-items-center mb-4 pb-1"><a href="/Employee-Portal/people_acquisition/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>PEOPLE ACQUISITION</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button class="accordion-button py-2 d-flex justify-space-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                    PEOPLE OPERATIONS
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                <div class="accordion-body">
-                    <div id="list-group list-group-flush navlist">
-                        <ul class="portal p-0">
-                            <li class="d-flex flex-row align-items-center mb-4 pt-2 pb-1"><a href="/Employee-Portal/people_management/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE EXPERIENCE</a></li>
-                            <li class="d-flex flex-row align-items-center mb-4 pb-1"><a href="/Employee-Portal/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>PEOPLE EXCELLENCE</a></li>
-                            <li class="d-flex flex-row align-items-center mb-4 pb-1"><a href="/Employee-Portal/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE DEVELOPMENT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button py-2 d-flex justify-space-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
-                    PEOPLE SERVICES
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="accordion-body">
-                    <div id="list-group list-group-flush navlist">
-                        <ul class="portal p-0">
-                            <li class="d-flex flex-row align-items-center mb-4 pt-2 pb-1"><a href="/Employee-Portal/people_services/people_support/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE SUPPORT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <button class="main-btn"><a href="/Employee-Portal/others/employee_admin/index.php">EMPLOYEE ADMIN</a></button>
-            <button class="main-btn"><a href="/Employee-Portal/others/it_helpdesk/index.php">IT HELPDESK</a></button>
-        </div>
-    </div> -->
-
     <div class="list-group list-group-flush navlist">
         <ul class="portal">
             <div class="sublist py-2">
                 <h1>PEOPLE PROVISIONS</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_attraction/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE ATTRACTION</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_acquisition/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE ACQUISITION</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_attraction/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>ATTRACTION</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_acquisition/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>ACQUISITION</a></li>
             </div>
             <div class="sublist  py-2">
                 <h1>PEOPLE OPERATIONS</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_experience/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE EXPERIENCE</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_excellence/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>PEOPLE EXCELLENCE</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE DEVELOPMENT</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_experience/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>EXPERIENCE</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_excellence/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>EXCELLENCE</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>DEVELOPMENT</a></li>
             </div>
             <div class="sublist py-2">
                 <h1>PEOPLE SERVICES</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_services/people_support/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>PEOPLE SUPPORT</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_services/people_support/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>SUPPORT</a></li>
             </div>
             <div class="sublist py-2">
-            <h1>OTHERS</h1>
+                <h1>OTHERS</h1>
                 <!-- <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/others/employee_admin/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-users me-2 icon-gray" style="width:15px;"></i>EMPLOYEE ADMIN</a></li> -->
                 <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/others/it_helpdesk/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-computer me-2 icon-gray" style="width:15px;"></i>IT HELPDESK</a></li>
             </div>
@@ -118,5 +60,32 @@ $version_num = "1.0.3"
         <a href="/Employee-Portal/version_control/version_content.php" style="text-decoration:none; color:black;">Payreto Employee Portal Version <?php echo $version_num; ?></a>
     </div>
 </div>
+<script>
+    // JavaScript code to handle selection
+    const navItems = document.querySelectorAll('.navlist li a');
 
+    // Check if a selected item is stored in local storage
+    const selected = localStorage.getItem('selectedItem');
+
+    // Set the initial selection based on the stored value
+    if (selected) {
+      navItems.forEach(item => {
+        if (item.href === selected) {
+          item.classList.add('selected');
+        }
+      });
+    }
+
+    // Add click event listener to each menu item
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Remove the 'selected' class from all items
+        navItems.forEach(item => item.classList.remove('selected'));
+        // Add the 'selected' class to the clicked item
+        this.classList.add('selected');
+        // Store the selected item in local storage
+        localStorage.setItem('selectedItem', this.href);
+      });
+    });
+  </script>
 <!-- /#sidebar-wrapper -->

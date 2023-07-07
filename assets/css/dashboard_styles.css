@@ -3,6 +3,10 @@
   transition: opacity 0.4s;
 } 
 
+::-ms-reveal {
+  display: none;
+}
+
 :root {
   --main-bg-color: #009d63;
   --main-text-color: #FFFFFF;
@@ -159,6 +163,12 @@
   letter-spacing: 0.10em;
   border: none;
   position: relative;
+}
+
+/* Additional CSS for selected item */
+.navlist li a.selected {
+  color: #031166;
+  font-weight: 900;
 }
 
 a.middle {
