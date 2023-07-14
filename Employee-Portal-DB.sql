@@ -1009,14 +1009,14 @@ DROP TABLE IF EXISTS `open_requisitions`;
 CREATE TABLE `open_requisitions` (
   `r_id` int(50) NOT NULL,
   `r_pos` varchar(255) NOT NULL,
-  `r_num` int(2) NOT NULL
+  `r_desc` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `open_requisitions`
 --
 
-INSERT INTO `open_requisitions` (`r_id`, `r_pos`, `r_num`) VALUES
+INSERT INTO `open_requisitions` (`r_id`, `r_pos`, `r_desc`) VALUES
 (1, 'Accountant', 5),
 (2, 'Account Manager - Payments', 5),
 (3, 'Accounts Receivable Associate', 5),

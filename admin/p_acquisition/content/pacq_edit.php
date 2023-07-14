@@ -39,16 +39,17 @@ if (isset($_POST['u_requisitions'])) {
     $len = count($row);
 
     for ($i = 1; $i < $len; $i++) {
-        if (!empty($_POST['r_pos' . $i] && $_POST['r_num' . $i])) {
-            $r_pos = $_POST["r_pos" . $i];
-            $r_num = $_POST["r_num" . $i];
+        if (!empty($_POST['r_pos' . $i] && $_POST['r_desc' . $i])) {
             $r_id = $_POST["r_id" . $i];
+            $r_pos = $_POST["r_pos" . $i];
+            $r_desc = $_POST["r_desc" . $i];
+            
 
             $r_pos = htmlEntEncode($r_pos);
 
             require_once "../../audit_logs/audit_db.php";
 
-            $sql = "UPDATE open_requisitions SET r_pos = '$r_pos', r_num = '$r_num' WHERE r_id = '$r_id'";
+            $sql = "UPDATE open_requisitions SET r_pos = '$r_pos', r_desc = '$r_desc' WHERE r_id = '$r_id'";
             mysqli_query($conn, $sql);
             $_SESSION['status_p_acq'] = "Position Updated!";
             $_SESSION['status_text'] = "You have successfully updated the position details!";
@@ -58,13 +59,13 @@ if (isset($_POST['u_requisitions'])) {
 
     if (!empty($_POST['r_field1'] && $_POST['r_field2'])) {
         $r_pos = $_POST['r_field1'];
-        $r_num = $_POST['r_field2'];
+        $r_desc = $_POST['r_field2'];
 
         $r_pos = htmlEntEncode($r_pos);
 
         require_once "../../audit_logs/audit_db.php";
 
-        $sql = "INSERT INTO open_requisitions (r_id, r_pos, r_num) VALUES (default, '$r_pos', '$r_num')";
+        $sql = "INSERT INTO open_requisitions (r_id, r_pos, r_desc) VALUES (default, '$r_pos', '$r_desc')";
         mysqli_query($conn, $sql);
         $_SESSION['status_p_acq'] = "Position Added!";
         $_SESSION['status_text'] = "You have successfully added a position.";

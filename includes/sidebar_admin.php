@@ -13,18 +13,18 @@ $version_num = "1.0.3"
         <ul class="portal">
             <div class="sublist py-2">
                 <h1>PEOPLE PROVISIONS</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_attraction/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE ATTRACTION</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_acquisition/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE ACQUISITION</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_attraction/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>ATTRACTION</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_provisions/people_acquisition/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>ACQUISITION</a></li>
             </div>
-            <div class="sublist py-2">
+            <div class="sublist  py-2">
                 <h1>PEOPLE OPERATIONS</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_experience/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE EXPERIENCE</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_excellence/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>PEOPLE EXCELLENCE</a></li>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE DEVELOPMENT</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_experience/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>EXPERIENCE</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_excellence/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>EXCELLENCE</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_operations/people_development/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>DEVELOPMENT</a></li>
             </div>
             <div class="sublist py-2">
                 <h1>PEOPLE SERVICES</h1>
-                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_services/people_support/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>PEOPLE SUPPORT</a></li>
+                <li class="d-flex flex-row align-items-center mb-4"><a href="/Employee-Portal/people_services/people_support/index.php" class="list-group-item bg-transparent middle"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>SUPPORT</a></li>
             </div>
             <div class="sublist py-2">
                 <h1>OTHERS</h1>
@@ -41,14 +41,14 @@ $version_num = "1.0.3"
             <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1) echo " " . "d-none";?>"><a href="/Employee-Portal/admin/audit_logs/audit_view.php" class="list-group-item bg-transparent"><i class="fa-solid fa-right-to-bracket me-2 icon-gray" style="width:15px;"></i>AUDIT LOGS</a></li>
             <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/homepage/content/homepage_admin.php" class="list-group-item bg-transparent"><i class="fas fa-computer me-2 icon-gray" style="width:15px;"></i>HOMEPAGE</a></li>
 
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 3) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_acquisition/content/pacq_admin.php" class="list-group-item bg-transparent"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>PEOPLE ACQUISITION</a></li>
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 1) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_attraction/content/patt_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE ATTRACTION</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 3) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_acquisition/content/pacq_admin.php" class="list-group-item bg-transparent"><i class="fas fa-people-arrows-left-right me-2 icon-gray" style="width:15px;"></i>ACQUISITION</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 1) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_attraction/content/patt_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>ATTRACTION</a></li>
 
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 8) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_experience/content/pexp_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE EXPERIENCE</a></li>
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 5) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_excellence/content/pexcel_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>PEOPLE EXCELLENCE</a></li>
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 2) echo " " . "d-none";?>"><a href="/Employee-Portal/admin/p_development/content/pdev_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>PEOPLE DEVELOPMENT</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 8) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_experience/content/pexp_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>EXPERIENCE</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 5) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_excellence/content/pexcel_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user me-2 icon-gray" style="width:15px;"></i>EXCELLENCE</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 2) echo " " . "d-none";?>"><a href="/Employee-Portal/admin/p_development/content/pdev_admin.php" class="list-group-item bg-transparent"><i class="fas fa-user-gear me-2 icon-gray" style="width:15px;"></i>DEVELOPMENT</a></li>
             
-            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 4) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_support/content/psup_admin.php" class="list-group-item bg-transparent"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>PEOPLE SUPPORT</a></li>
+            <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 4) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/p_support/content/psup_admin.php" class="list-group-item bg-transparent"><i class="fas fa-people-line me-2 icon-gray" style="width:15px;"></i>SUPPORT</a></li>
             <!-- <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 7) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/e_admin/content/eadm_admin.php" class="list-group-item bg-transparent"><i class="fas fa-users me-2 icon-gray" style="width:15px;"></i>EMPLOYEE ADMIN</a></li> -->
             <li class="d-flex flex-row align-items-center mb-2 px-3<?php if ($admin_oa != 1 && $admin != 6) echo " " . "d-none"; ?>"><a href="/Employee-Portal/admin/it_helpdesk/content/ithelp_admin.php" class="list-group-item bg-transparent"><i class="fas fa-computer me-2 icon-gray" style="width:15px;"></i>IT HELPDESK</a></li>
         </ul>

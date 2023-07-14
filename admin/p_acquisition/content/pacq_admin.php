@@ -113,7 +113,7 @@ $update_id = @$link[7];
                                                 <input class="my-1" type="text" id="<?php echo 'r_pos' . $j ?>" name="<?php echo 'r_pos' . $j ?>" value="<?php echo html_entity_decode($value["r_pos"]); ?>" placeholder="Position">
                                                 <a type="button" href="<?php echo "../../deleteContent/delete.php?r_id=" . $value['r_id'] . "&delname=Deleted Position: " . $value["r_pos"]; ?>" class="btn btn-danger mx-1 rounded-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"><i class="fa-solid fa-trash"></i></a>
                                             </div>
-                                            <input class="my-1" type="number" id="<?php echo 'r_num' . $j ?>" name="<?php echo 'r_num' . $j ?>" value="<?php echo $value["r_num"] ?>" placeholder="Number" maxlength="2">
+                                            <textarea class="my-1" name="<?php echo "r_desc" . $j ?>" id="<?php echo "r_desc" . $j ?>" placeholder="<?php echo "r_desc" . $j ?>"><?php echo html_entity_decode($value["r_desc"]); ?></textarea>
                                         </div>
                                     <?php $j++;
                                     endforeach ?>

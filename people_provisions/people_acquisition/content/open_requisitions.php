@@ -63,7 +63,7 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Position</th>
-                                    <th scope="col">Count</th>
+                                    <th scope="col">Description</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -73,7 +73,7 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                     echo "<tr>";
                                     echo "<th scope='row'>$j</th>";
                                     echo "<td>" . $value['r_pos'] . "</td>";
-                                    echo "<td>" . $value['r_num'] . "</td>";
+                                    echo "<td style=\"width: 60%;\"><textarea id=\"myTextarea\" oninput=\"autoAdjustRowHeight(this)\" style=\"width: 100%; height: auto; background:none; min-height: 100px; border: none; outline: none; resize: none; overflow: auto;\">" . $value['r_desc'] . "</textarea></td>";
                                     echo "</tr>";
                                     $j++;
                                 }
@@ -83,10 +83,17 @@ $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <?php endif; ?>
                 </div>
                 <script src="assets/js/events_script.js"></script>
+                <script>
+                    function adjustRowHeight(textarea) {
+                        const row = textarea.parentNode;
+                        row.style.height = textarea.scrollHeight + 'px';
+                    }
+                </script>
             </div>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
 
 </body>
+
 </html>
